@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&&display=swap"
+      rel="stylesheet"
+    />
+    <title>Quiz App</title>
+    <script type="module" crossorigin src="/vanilla-js-quiz-app/assets/index-BvzWop3J.js"></script>
+    <link rel="stylesheet" crossorigin href="/vanilla-js-quiz-app/assets/index-GA_jyBBE.css">
+  </head>
+  <body>
+    <main class="quiz-container">
+      <!-- Skip to main content link for accessibility -->
+      <a href="#quiz-main" class="skip-link">Skip to main content</a>
+
+      <article
+        class="quiz-app"
+        id="quiz-main"
+        role="application"
+        aria-label="Quiz Application"
+      >
+        <!-- Start Quiz Button -->
+        <button
+          class="quiz-app__start-button"
+          id="start-quiz-btn"
+          type="button"
+          aria-label="Start the quiz"
+          aria-describedby="quiz-instructions"
+        >
+          Start Quiz
+        </button>
+        <div id="quiz-instructions" class="visually-hidden">
+          Click to begin the quiz. You will be presented with questions and
+          multiple choice answers.
+        </div>
+
+        <!-- Question Number Tracker -->
+        <div
+          class="quiz-app__question-number"
+          id="question-number"
+          aria-label="Current question number"
+        >
+          <span class="quiz-app__question-number-text">1/10</span>
+          <div
+            class="quiz-app__question-progress"
+            id="question-progress"
+            aria-label="Question progress indicator"
+          >
+            <div class="quiz-app__question-progress-cell"></div>
+            <div class="quiz-app__question-progress-cell"></div>
+            <div class="quiz-app__question-progress-cell"></div>
+            <div class="quiz-app__question-progress-cell"></div>
+            <div class="quiz-app__question-progress-cell"></div>
+            <div class="quiz-app__question-progress-cell"></div>
+            <div class="quiz-app__question-progress-cell"></div>
+            <div class="quiz-app__question-progress-cell"></div>
+            <div class="quiz-app__question-progress-cell"></div>
+            <div class="quiz-app__question-progress-cell"></div>
+          </div>
+        </div>
+
+        <!-- Question Headline -->
+        <h2
+          class="quiz-app__question-headline"
+          id="question-headline"
+          aria-live="polite"
+        ></h2>
+
+        <!-- Answer Choices -->
+        <ul
+          class="quiz-app__answers"
+          role="radiogroup"
+          aria-labelledby="question-headline"
+        ></ul>
+
+        <!-- Submit Button -->
+        <button
+          class="quiz-app__submit-button"
+          id="submit-btn"
+          type="button"
+          aria-label="Submit your answer"
+          disabled
+        >
+          Submit
+        </button>
+
+        <!-- Empty Void -->
+        <div class="quiz-app__void" aria-hidden="true"></div>
+
+        <!-- Timer Element -->
+        <div
+          class="quiz-app__timer"
+          id="timer"
+          role="timer"
+          aria-live="polite"
+          aria-label="Quiz timer"
+        >
+          <time datetime="PT0M0S" class="quiz-app__timer-text">00:00</time>
+        </div>
+
+        <!-- Score Tracker -->
+        <div
+          class="quiz-app__score-tracker"
+          id="score-tracker"
+          aria-live="polite"
+          aria-label="Current quiz score"
+        >
+          <span class="quiz-app__score-label">Total Score: </span>
+          <span class="quiz-app__score-value" id="score-value">0</span>
+        </div>
+
+        <!-- Next Button -->
+        <button
+          class="quiz-app__next-button"
+          id="next-btn"
+          type="button"
+          aria-label="Go to next question"
+          disabled
+        >
+          Next
+        </button>
+      </article>
+    </main>
+
+  </body>
+</html>
