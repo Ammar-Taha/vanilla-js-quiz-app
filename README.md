@@ -11,7 +11,7 @@ Experience the quiz application in action: **[View Live Demo](https://ammar-taha
 
 ## 📸 Design Comparison
 
-<div align="center">
+<div>
 
 <table style="width: 100%; table-layout: fixed;">
   <tr>
