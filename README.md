@@ -3,6 +3,11 @@
 A modern, interactive quiz application built with vanilla JavaScript, featuring a clean modular architecture, real-time timer, answer shuffling, and comprehensive accessibility features.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/Ammar-Taha/vanilla-js-quiz-app)
+[![Live Preview](https://img.shields.io/badge/Live_Preview-Demo-green?logo=github-pages)](https://ammar-taha.github.io/vanilla-js-quiz-app/)
+
+## 🌐 Live Preview
+
+Experience the quiz application in action: **[View Live Demo](https://ammar-taha.github.io/vanilla-js-quiz-app/)**
 
 ## 📸 Design Comparison
 
@@ -62,27 +67,27 @@ A modern, interactive quiz application built with vanilla JavaScript, featuring 
 
 ```
 vanilla-js-quiz-app/
-├── assets/                 # Image assets (preview screenshots)
-├── modules/                # JavaScript modules (modular architecture)
-│   ├── answers.js         # Answer element creation
-│   ├── dom.js            # DOM element references
-│   ├── evaluation.js     # Answer evaluation logic
-│   ├── events.js         # Event listeners setup
-│   ├── questions.js      # Question rendering logic
-│   ├── quizFlow.js      # Quiz flow control (end, shake animations)
-│   ├── state.js         # Application state management
-│   ├── timer.js         # Timer functionality
-│   └── utils.js         # Utility functions
-├── src/                   # Source files
-│   ├── index.css        # CSS entry point (layer imports)
-│   ├── main.js          # Main entry point
+├── assets/                   # Image assets (preview screenshots)
+├── modules/                  # JavaScript modules (modular architecture)
+│   ├── answers.js            # Answer element creation
+│   ├── dom.js                # DOM element references
+│   ├── evaluation.js         # Answer evaluation logic
+│   ├── events.js             # Event listeners setup
+│   ├── questions.js          # Question rendering logic
+│   ├── quizFlow.js           # Quiz flow control (end, shake animations)
+│   ├── state.js              # Application state management
+│   ├── timer.js              # Timer functionality
+│   └── utils.js              # Utility functions
+├── src/                      # Source files
+│   ├── index.css             # CSS entry point (layer imports)
+│   ├── main.js               # Main entry point
 │   ├── modern-css-reset.css  # CSS reset styles
-│   ├── quizData.js      # Quiz questions dataset
-│   └── style.css        # Application styles
-├── index.html            # HTML markup
-├── package.json          # Project dependencies
-├── vite.config.js       # Vite configuration
-└── README.md            # Project documentation
+│   ├── quizData.js           # Quiz questions dataset
+│   └── style.css             # Application styles
+├── index.html                # HTML markup
+├── package.json              # Project dependencies
+├── vite.config.js            # Vite configuration
+└── README.md                 # Project documentation
 ```
 
 ## 🔄 App Logic & Workflow
