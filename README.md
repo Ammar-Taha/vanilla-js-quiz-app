@@ -2,6 +2,8 @@
 
 A modern, interactive quiz application built with vanilla JavaScript, featuring a clean modular architecture, real-time timer, answer shuffling, and comprehensive accessibility features.
 
+[![GitHub](https://img.shields.io/badge/GitHub-Repository-blue?logo=github)](https://github.com/Ammar-Taha/vanilla-js-quiz-app)
+
 ## 📸 Design Comparison
 
 <div align="center">
@@ -59,7 +61,7 @@ A modern, interactive quiz application built with vanilla JavaScript, featuring 
 ## 📁 Project Structure
 
 ```
-Vanilla Quiz App/
+vanilla-js-quiz-app/
 ├── assets/                 # Image assets (preview screenshots)
 ├── modules/                # JavaScript modules (modular architecture)
 │   ├── answers.js         # Answer element creation
@@ -180,7 +182,7 @@ Vanilla Quiz App/
 
 ### Core Modules
 
-#### `state.js` - State Management
+#### [`state.js`](https://github.com/Ammar-Taha/vanilla-js-quiz-app/blob/main/modules/state.js) - State Management
 - **Purpose**: Centralized application state
 - **Exports**:
   - `questions`: Deep-cloned quiz data array
@@ -193,12 +195,12 @@ Vanilla Quiz App/
     - `quizStarted`: Boolean flag for quiz state
   - `getCurrent()`: Helper to get current question
 
-#### `dom.js` - DOM References
+#### [`dom.js`](https://github.com/Ammar-Taha/vanilla-js-quiz-app/blob/main/modules/dom.js) - DOM References
 - **Purpose**: Centralized DOM element queries
 - **Exports**: `domElements` object with all DOM references
 - **Benefits**: Single source of truth for DOM queries, easy maintenance
 
-#### `questions.js` - Question Rendering
+#### [`questions.js`](https://github.com/Ammar-Taha/vanilla-js-quiz-app/blob/main/modules/questions.js) - Question Rendering
 - **Purpose**: Handles question display logic
 - **Exports**: `renderQuestion(questionEntry)`
 - **Functionality**:
@@ -210,7 +212,7 @@ Vanilla Quiz App/
   - Enables radio inputs if quiz started
   - Triggers quiz end if no questions remain
 
-#### `answers.js` - Answer Element Creation
+#### [`answers.js`](https://github.com/Ammar-Taha/vanilla-js-quiz-app/blob/main/modules/answers.js) - Answer Element Creation
 - **Purpose**: Factory function for answer UI elements
 - **Exports**: `createAnswerElement(answerText, displayIndex, originalIndex, isQuizStarted)`
 - **Returns**: Complete `<li>` element with:
@@ -219,7 +221,7 @@ Vanilla Quiz App/
   - Feedback span (initially hidden)
   - Proper ARIA labels and roles
 
-#### `evaluation.js` - Answer Evaluation
+#### [`evaluation.js`](https://github.com/Ammar-Taha/vanilla-js-quiz-app/blob/main/modules/evaluation.js) - Answer Evaluation
 - **Purpose**: Evaluates user answers and provides feedback
 - **Exports**: `evaluateUserAnswer(questionEntry)`
 - **Functionality**:
@@ -231,7 +233,7 @@ Vanilla Quiz App/
   - Displays feedback tag
   - Removes current question from array
 
-#### `timer.js` - Timer Management
+#### [`timer.js`](https://github.com/Ammar-Taha/vanilla-js-quiz-app/blob/main/modules/timer.js) - Timer Management
 - **Purpose**: Complete timer functionality
 - **Exports**:
   - `startTimer()`: Begins countdown, handles expiration
@@ -245,7 +247,7 @@ Vanilla Quiz App/
   - Auto-advances on expiration
   - Smooth styling transitions
 
-#### `quizFlow.js` - Quiz Flow Control
+#### [`quizFlow.js`](https://github.com/Ammar-Taha/vanilla-js-quiz-app/blob/main/modules/quizFlow.js) - Quiz Flow Control
 - **Purpose**: Manages quiz progression and end state
 - **Exports**:
   - `endQuiz()`: Handles quiz completion
@@ -256,7 +258,7 @@ Vanilla Quiz App/
   - Sets up reload functionality
   - Provides visual feedback animations
 
-#### `utils.js` - Utility Functions
+#### [`utils.js`](https://github.com/Ammar-Taha/vanilla-js-quiz-app/blob/main/modules/utils.js) - Utility Functions
 - **Purpose**: Reusable helper functions
 - **Exports**:
   - `shuffleArray(array)`: Fisher-Yates shuffle algorithm
@@ -266,7 +268,7 @@ Vanilla Quiz App/
   - `enableRadioInputs(container)`: Enables all radio inputs
   - `updateProgressIndicator(current, total, container)`: Updates progress bar
 
-#### `events.js` - Event Management
+#### [`events.js`](https://github.com/Ammar-Taha/vanilla-js-quiz-app/blob/main/modules/events.js) - Event Management
 - **Purpose**: Centralized event listener setup
 - **Exports**: `setupEventListeners()`
 - **Event Handlers**:
@@ -275,7 +277,7 @@ Vanilla Quiz App/
   - **Next**: Resets timer, renders next question, starts timer
   - **Radio Change**: Auto-enables submit button on selection
 
-#### `main.js` - Application Entry Point
+#### [`main.js`](https://github.com/Ammar-Taha/vanilla-js-quiz-app/blob/main/src/main.js) - Application Entry Point
 - **Purpose**: Orchestrates application initialization
 - **Imports**: CSS styles, modules
 - **Initialization**:
@@ -294,8 +296,8 @@ Vanilla Quiz App/
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository-url>
-   cd "Vanilla Quiz App"
+   git clone https://github.com/Ammar-Taha/vanilla-js-quiz-app.git
+   cd vanilla-js-quiz-app
    ```
 
 2. **Install dependencies**:
@@ -348,9 +350,9 @@ npm run deploy
 
 The project uses **CSS Layers** for organized cascade management:
 
-1. **Normalize Layer**: Browser normalization (Normalize.css)
-2. **Reset Layer**: Custom reset styles (modern-css-reset.css)
-3. **App Layer**: Application-specific styles (style.css)
+1. **Normalize Layer**: Browser normalization ([Normalize.css](https://github.com/necolas/normalize.css))
+2. **Reset Layer**: Custom reset styles ([modern-css-reset.css](https://github.com/Ammar-Taha/vanilla-js-quiz-app/blob/main/src/modern-css-reset.css))
+3. **App Layer**: Application-specific styles ([style.css](https://github.com/Ammar-Taha/vanilla-js-quiz-app/blob/main/src/style.css))
 
 ### JavaScript Architecture
 
@@ -369,11 +371,6 @@ User Action → Event Handler → State Update → UI Render → User Feedback
 ### Key Design Patterns
 
 - **Module Pattern**: Encapsulated functionality per file
-- **Factory Pattern**: `createAnswerElement()` creates answer UI
+- **Factory Pattern**: [`createAnswerElement()`](https://github.com/Ammar-Taha/vanilla-js-quiz-app/blob/main/modules/answers.js) creates answer UI
 - **Observer Pattern**: Event listeners for user interactions
 - **State Pattern**: Centralized state management
-
----
-
-**Built with ❤️ using Vanilla JavaScript**
-
