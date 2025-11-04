@@ -15,11 +15,13 @@ Experience the quiz application in action: **[View Live Demo](https://ammar-taha
 
 <table style="width: 100%; table-layout: fixed;">
   <tr>
-    <td style="width: 50%; text-align: center; padding: 10px;">
+    <td style="width: 100%; text-align: center; padding: 10px;">
       <strong>Original Sketch/Wireframe</strong><br>
       <img src="./assets/quiz-app-light.png" alt="Wireframe Sketch" style="width: 500px; height: 400px; object-fit: contain; display: block; margin: 0 auto;">
     </td>
-    <td style="width: 50%; text-align: center; padding: 10px;">
+  </tr>
+  <tr>
+  <td style="width: 100%; text-align: center; padding: 10px;">
       <strong>Final Implementation</strong><br>
       <img src="./assets/finished-app.png" alt="Quiz App Implementation" style="width: 500px; height: 400px; object-fit: contain; display: block; margin: 0 auto;">
     </td>
